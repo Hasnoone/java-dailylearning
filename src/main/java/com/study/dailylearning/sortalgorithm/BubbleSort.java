@@ -8,10 +8,26 @@ package com.study.dailylearning.sortalgorithm;
  **/
 public class BubbleSort {
 
+    public static void main(String[] args) {
+        int[] intArr = {15,24,78,95,13,17,33,22,45};
+        bubbleSort(intArr);
+
+        for (int i = 0; i < intArr.length; i++) {
+            System.out.println(intArr[i]);
+        }
+    }
 
 
-    public static void bubbleSort() {
-
+    public static void bubbleSort(int[] intArr) {
+        for (int i = 0; i < intArr.length-1; i++) {//表示趟数，一共arr.length-1次。
+            for (int j = intArr.length-1; j > i; j--) {
+                if (intArr[j] < intArr[j-1]) {
+                    int temp = intArr[j];
+                    intArr[j] = intArr[j-1];
+                    intArr[j-1] = temp;
+                }
+            }
+        }
     }
 
 
