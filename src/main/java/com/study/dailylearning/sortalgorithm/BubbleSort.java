@@ -19,7 +19,8 @@ public class BubbleSort {
 
 
     public static void bubbleSort(int[] intArr) {
-        for (int i = 0; i < intArr.length-1; i++) {//表示趟数，一共arr.length-1次。
+        //表示趟数，一共arr.length-1次。
+        for (int i = 0; i < intArr.length-1; i++) {
             for (int j = intArr.length-1; j > i; j--) {
                 if (intArr[j] < intArr[j-1]) {
                     int temp = intArr[j];
@@ -29,6 +30,25 @@ public class BubbleSort {
             }
         }
     }
+
+
+    public static void bubbleSort2(int[] intArr) {
+        boolean flag;
+        for (int i = 0; i < intArr.length - 1; i++) {
+            flag = false;
+            for (int j = intArr.length - 1; j > i; j--) {
+                if (intArr[j] < intArr[j-1]) {
+                    int temp = intArr[j];
+                    intArr[j] = intArr[j-1];
+                    intArr[j-1] = temp;
+                    flag = true;
+                }
+            }
+            if(!flag) break;
+        }
+    }
+
+
 
 
 }
