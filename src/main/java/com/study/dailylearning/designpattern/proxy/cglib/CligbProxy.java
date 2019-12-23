@@ -12,16 +12,27 @@ import java.lang.reflect.Method;
  */
 public class CligbProxy implements MethodInterceptor {
 
-    Subject subject;
+    private Object target;
 
-    public CligbProxy(Subject subject) {
-        this.subject = subject;
+    public CligbProxy(Object target) {
+        this.target = target;
     }
-
 
 
     @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
+        System.out.println("before invocation ···");
+        Object invoke = method.invoke(target, objects);
+        System.out.println("after invocation   ···");
+
+        return invoke;
+    }
+
+
+
+    public static Object getProxy() {
+
+
         return null;
     }
 }

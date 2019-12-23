@@ -10,7 +10,7 @@ public class BubbleSort {
 
     public static void main(String[] args) {
         int[] intArr = {15,24,78,95,13,17,33,22,45};
-        bubbleSort(intArr);
+        bubbleSort3(intArr);
 
         for (int i = 0; i < intArr.length; i++) {
             System.out.println(intArr[i]);
@@ -30,6 +30,21 @@ public class BubbleSort {
             }
         }
     }
+
+
+    public static void bubbleSort3(int[] intArr) {
+        //the times of loop
+        for (int i = 0; i < intArr.length-1; i++) {
+            for (int j = 0; j < intArr.length - 1; j++) {
+                if (intArr[j] > intArr[j+1]) {
+                    int temp = intArr[j];
+                    intArr[j] = intArr[j+1];
+                    intArr[j+1] = temp;
+                }
+            }
+        }
+    }
+
 
 
     public static void bubbleSort2(int[] intArr) {
