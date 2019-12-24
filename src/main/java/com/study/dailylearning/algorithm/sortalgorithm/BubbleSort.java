@@ -1,4 +1,4 @@
-package com.study.dailylearning.sortalgorithm;
+package com.study.dailylearning.algorithm.sortalgorithm;
 
 /**
  * @program: dailylearning

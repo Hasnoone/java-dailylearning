@@ -1,4 +1,4 @@
-package com.study.dailylearning.sortalgorithm;
+package com.study.dailylearning.algorithm.sortalgorithm;
 
 /**
  * @program: dailylearning
@@ -13,7 +13,7 @@ public class InsertionSort {
 
     public static void main(String[] args) {
         int[] intArr = {15,24,78,95,13,17,33,22,45};
-        insertionSort(intArr);
+        insertionSort2(intArr);
         //print the  int type of array
         for (int i = 0; i < intArr.length; i++) {
             System.out.println(intArr[i]);
@@ -22,11 +22,9 @@ public class InsertionSort {
 
 
     public static void insertionSort(int[] intArray) {
-
         for (int i = 0; i < intArray.length-1; i++) {
             int prefixIndex = i;
             int currentValue = intArray[i+1];
-
             while (prefixIndex >= 0 && intArray[prefixIndex] > currentValue) {
                 intArray[prefixIndex+1] = intArray[prefixIndex];
                 prefixIndex--;
@@ -34,6 +32,19 @@ public class InsertionSort {
             intArray[prefixIndex + 1] = currentValue;
         }
 
+    }
+
+    // 15,24,78,95,13,17,33,22,45
+    public static void insertionSort2(int[] intArray) {
+        for (int i = 0; i < intArray.length-1; i++) {
+            int currentIndex = i;
+            int nextIndexValue = intArray[currentIndex+1];
+            while (currentIndex >= 0 && intArray[currentIndex] > nextIndexValue) {
+                intArray[currentIndex+1] = intArray[currentIndex];
+                currentIndex--;
+            }
+            intArray[currentIndex+1]=nextIndexValue;
+        }
     }
 }
 
