@@ -1,4 +1,4 @@
-package com.study.dailylearning.designpattern.facade;
+package com.study.dailylearning.designpattern.structurePattern.facade;
 
 /**
  * @description 外观类

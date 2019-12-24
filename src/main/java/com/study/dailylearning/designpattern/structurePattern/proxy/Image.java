@@ -1,4 +1,4 @@
-package com.study.dailylearning.designpattern.proxy;
+package com.study.dailylearning.designpattern.structurePattern.proxy;
 
 /**
  * @author kevin

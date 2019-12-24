@@ -1,4 +1,4 @@
-package com.study.dailylearning.designpattern.proxy.cglib;
+package com.study.dailylearning.designpattern.structurePattern.proxy.cglib;
 
 /**
  * @description

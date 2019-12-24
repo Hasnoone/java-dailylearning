@@ -1,4 +1,4 @@
-package com.study.dailylearning.designpattern.proxy.jdkself;
+package com.study.dailylearning.designpattern.structurePattern.proxy.jdkself;
 
 import java.lang.reflect.Proxy;
 
