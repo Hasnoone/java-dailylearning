@@ -2,7 +2,7 @@ package com.study.dailylearning.algorithm.sortalgorithm;
 
 /**
  * @program: dailylearning
- * @description: quick sort
+ * @description:
  * @author: XuHang
  * @create: 2019-12-25
  **/
