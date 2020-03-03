@@ -1,4 +1,4 @@
-package com.study.dailylearning.structureStudy.list.linkedList;
+package com.study.dailylearning.dataStructure.list.linkedList;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,18 +16,31 @@ public class SingleListDemo {
     public static void main(String[] args) {
         SinglyLinkedList list = new SinglyLinkedList();
 
-//        list.insert(1);
-//        list.insert(3);
-//        list.insert(2);
+        list.insert(1);
+        list.insert(3);
+        list.insert(2);
 
 
-        list.insertSorted(2);
-        list.insertSorted(3);
-        list.insertSorted(2);
+//        list.insertSorted(2);
+//        list.insertSorted(3);
+//        list.insertSorted(2);
 
 
         list.priElements();
         System.out.println(list.getSize());
+
+
+        list.deleteElement(1);
+        list.priElements();
+        System.out.println(list.getSize());
+
+
+        list.insertSpecificPosition(12, 1);
+        list.insertSpecificPosition(13, 2);
+//        list.insertSpecificPosition(11, 7);//failure
+        list.priElements();
+        System.out.println(list.getSize());
+
     }
 
 }
@@ -84,6 +97,36 @@ class SinglyLinkedList {
         newNode.setNext(childNode);
         temp.setNext(newNode);
         size++;
+    }
+
+
+    public void deleteElement(int position) {
+        Node temp = head;
+
+        for (int i = 0; i < position-1; i++) {
+            temp = temp.getNext();
+        }
+
+        Node removeNode = temp.getNext().getNext();
+        temp.setNext(temp.getNext().getNext());
+        removeNode = null;
+        size--;
+
+    }
+
+
+    public void insertSpecificPosition(int data, int position) {
+        Node temp = head;
+        for (int i = 0; i < position-1; i++) {
+            temp = temp.getNext();
+        }
+
+        Node newNode = new Node(data);
+        newNode.setNext(temp.getNext());
+        temp.setNext(newNode);
+
+
+
 
     }
 }
@@ -91,7 +134,7 @@ class SinglyLinkedList {
 
 @Getter
 @Setter
-@ToString(exclude = "next")
+@ToString
 @NoArgsConstructor
 class Node {
 

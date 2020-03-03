@@ -1,4 +1,4 @@
-package com.study.dailylearning.structureStudy.dataStructure.hashmap;
+package com.study.dailylearning.dataStructure.hashmap;
 
 /**
  * @program: dailylearning
@@ -10,6 +10,7 @@ public class Node {
     int data;
     Node next;
 
+    //construct a head
     public Node(int data) {
         this.data = data;
         this.next = null;

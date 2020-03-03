@@ -1,8 +1,6 @@
-package com.study.dailylearning.structureStudy.list.arrayList;
+package com.study.dailylearning.dataStructure.list.arrayList;
 
-import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
 
 /**
  * @program: dailylearning

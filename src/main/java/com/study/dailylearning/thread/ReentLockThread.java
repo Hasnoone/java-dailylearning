@@ -35,8 +35,6 @@ public class ReentLockThread {
 
     }
 
-
-
     public static void testSyn() {
         String name = Thread.currentThread().getName();
         reentrantLock.lock();

@@ -1,4 +1,4 @@
-package com.study.dailylearning.structureStudy.array;
+package com.study.dailylearning.dataStructure.array;
 
 import lombok.Getter;
 import lombok.Setter;
