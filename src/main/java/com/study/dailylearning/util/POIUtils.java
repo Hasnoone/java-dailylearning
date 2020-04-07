@@ -16,7 +16,7 @@ import java.util.List;
  * @outhor xuhang
  * @create 2020-03-26 15:03
  */
-public class POIutils {
+public class POIUtils {
 
 
     public static void main(String[] args) throws IOException {
