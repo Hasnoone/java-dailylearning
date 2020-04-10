@@ -17,7 +17,6 @@ public class MyLinkedList<T> implements Iterable {
             this.pre = pre;
             this.next = next;
         }
-
         private Object data;
         private Node<T> pre;
         private Node<T> next;
@@ -30,22 +29,65 @@ public class MyLinkedList<T> implements Iterable {
     private Node<T> endNode;
 
 
+    //initial
     public MyLinkedList() {
         doClean();
     }
 
+    //initial
     public void clean() {
         doClean();
     }
 
+    //return  size
     public int size() {
         return size;
     }
 
+    //
     public boolean isEmpty() {
         return size() == 0;
     }
 
+
+    public boolean add(T data) {
+        add(size(), data);
+        return true;
+    }
+
+
+    public void add(int index, T data) {
+        addBefore(getNode(index,0,size()),data);
+    }
+
+    private void addBefore(Object node, Node data) {
+
+    }
+
+
+    public Node<T> getNode(int index) {
+        return getNode(index, 0, size() - 1);
+    }
+
+    public Node<T> getNode(int index, int lowerIndex, int higherIndex) {
+        Node<T> node = null;
+        if (index < lowerIndex || index > higherIndex) {
+            throw new IndexOutOfBoundsException();
+        }
+
+        if (index < size() / 2) {
+            node = beginnerNode.next;
+            for (int i = 0; i < index; i++) {
+                node = node.next;
+            }
+        } else {
+            node = endNode;
+            for (int i = index; i < size(); i++) {
+                node = node.pre;
+            }
+        }
+        return node;
+    }
 
 
     private void doClean() {
