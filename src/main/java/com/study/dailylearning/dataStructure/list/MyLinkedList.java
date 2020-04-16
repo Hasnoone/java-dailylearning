@@ -60,8 +60,12 @@ public class MyLinkedList<T> implements Iterable {
         addBefore(getNode(index,0,size()),data);
     }
 
-    private void addBefore(Object node, Node data) {
-
+    //add an item to this collection ,at specified position node
+    private void addBefore(Node node, T data) {
+        Node newNode = new Node(data, node.pre, node);
+        newNode.pre.next = newNode;
+        size++;
+        modCount++;
     }
 
 
