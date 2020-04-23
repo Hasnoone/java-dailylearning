@@ -1,4 +1,4 @@
-package com.study.dailylearning.designpattern.queue;
+package com.study.dailylearning.dataStructure.queue;
 
 /**
  * @program: dailylearning
@@ -7,7 +7,6 @@ package com.study.dailylearning.designpattern.queue;
  * @create: 2020-04-18
  **/
 public class LinkedQueue<T> {
-
 
     public class QNode<T> {
         T data;
@@ -19,10 +18,8 @@ public class LinkedQueue<T> {
         }
     }
 
-
     QNode front;
     QNode rear;
-
 
     public LinkedQueue() {
         front = null;
@@ -47,9 +44,6 @@ public class LinkedQueue<T> {
             System.out.println(temp.data);
             temp = temp.next;
         }
-
-
-
     }
 
 
@@ -81,10 +75,6 @@ public class LinkedQueue<T> {
         queue.enQueue(30);
         queue.printQueue();
         System.out.println("==========");
-
-
-
-
 
         queue.deQueue();
         queue.printQueue();

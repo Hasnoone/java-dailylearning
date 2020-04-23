@@ -1,4 +1,4 @@
-package com.study.dailylearning.designpattern.queue;
+package com.study.dailylearning.dataStructure.queue;
 
 /**
  * @program: dailylearning
@@ -56,32 +56,13 @@ public class ArrayQueue<T> {
         return returnVal;
     }
 
-
-
-
-
-
-
-
-
     public static void main(String[] args) {
         ArrayQueue<Integer> arrayQueue = new ArrayQueue<>(10);
-
         arrayQueue.enQueue(1);
         arrayQueue.enQueue(2);
         arrayQueue.enQueue(3);
-
-
         arrayQueue.deQueue();
         arrayQueue.deQueue();
-
     }
-
-
-
-
-
-
-
 }
 
