@@ -111,7 +111,6 @@ class SinglyLinkedList {
         temp.setNext(temp.getNext().getNext());
         removeNode = null;
         size--;
-
     }
 
 

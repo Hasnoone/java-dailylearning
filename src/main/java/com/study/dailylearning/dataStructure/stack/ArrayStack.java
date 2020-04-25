@@ -35,8 +35,8 @@ public class ArrayStack<T> {
     //pop a stack item
     public T pop() {
         T stackTopItem = null;
-        stackTopItem = (T) data[currentIndex];
-        data[currentIndex] = null;
+        stackTopItem = (T) data[currentIndex-1];
+        data[currentIndex-1] = null;
         currentIndex--;
         return stackTopItem;
     }
@@ -57,13 +57,9 @@ public class ArrayStack<T> {
         integerArrayStack.push(2);
         integerArrayStack.push(3);
 
-
         integerArrayStack.print();
 
-
         System.out.println(integerArrayStack.pop());
-
-
 
         integerArrayStack.print();
 
@@ -77,9 +73,6 @@ public class ArrayStack<T> {
 
 
     }
-
-
-
 
 
 }
