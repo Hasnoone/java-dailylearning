@@ -30,11 +30,11 @@ public class POIUtils {
             users.add(user);
         }
 
-        generatExcel(user1,users);
+        generateExcel(user1,users);
     }
 
 
-    public static void generatExcel(Object object, List list) throws IOException {
+    public static void generateExcel(Object object, List list) throws IOException {
         //获取对象的类对象
         Class<?> aClass = object.getClass();
         //存储对象的get方法名
