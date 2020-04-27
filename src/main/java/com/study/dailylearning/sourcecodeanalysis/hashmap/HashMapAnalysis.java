@@ -52,6 +52,4 @@ public class HashMapAnalysis {
             System.out.println(countryObj.getName()+"----"+capital);
         }
     }
-
-
 }
