@@ -1,7 +1,6 @@
 package com.study.dailylearning.dataStructure.stack;
 
-import com.sun.corba.se.spi.orbutil.threadpool.NoSuchWorkQueueException;
-
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -26,13 +25,14 @@ public class StackUsingTwoQueues {
             queue1.add(data);
         } else {
             //copy element from queue1 to queue2
-            for (int i = 0; i < queue1.size(); i++) {
+            int queue1Size = queue1.size();
+            for (int i = 0; i < queue1Size; i++) {
                 queue2.add(queue1.remove());
             }
-            queue2.add(data);
+            queue1.add(data);
 
             //copy element from queue2 to queue1
-            for (int i = 0; i < queue2.size(); i++) {
+            for (int i = 0; i < queue1Size; i++) {
                 queue1.add(queue2.remove());
             }
         }
@@ -45,6 +45,16 @@ public class StackUsingTwoQueues {
             throw new QueueEmptyException("There is no elements in the stack,Underflow Exception");
         }
         return queue1.remove();
+    }
+
+
+    public String printStack() {
+        StringBuilder sb = new StringBuilder();
+        Iterator<Integer> iterator = queue1.iterator();
+        while (iterator.hasNext()) {
+            sb.append(iterator.next() + ",");
+        }
+        return sb.toString();
     }
 
 
@@ -69,12 +79,12 @@ public class StackUsingTwoQueues {
         stack.push(90);
         stack.push(110);
         stack.push(30);
-        System.out.println("Removed element : "+ stack.pop());
+        System.out.println("Iterator the stack : "+ stack.printStack());
+        System.out.println("Removed element : " + stack.pop());
+        System.out.println("Iterator the stack : "+ stack.printStack());
         stack.push(170);
-        System.out.println("Removed element : "+ stack.pop());
+        System.out.println("Removed element : " + stack.pop());
+        System.out.println("Iterator the stack : "+ stack.printStack());
+
     }
-
-
-
-
 }
