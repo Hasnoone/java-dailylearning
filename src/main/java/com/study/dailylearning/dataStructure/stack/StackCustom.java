@@ -39,9 +39,6 @@ public class StackCustom {
     }
 
 
-
-
-
     public int pop() {
         if (!isEmpty()) {
             return array[top--];
@@ -57,7 +54,6 @@ public class StackCustom {
 
 
 
-
     //sort a stack by using another stack
     public StackCustom createStack(StackCustom stack) {
         StackCustom tempStack = new StackCustom(10);
@@ -70,7 +66,6 @@ public class StackCustom {
         }
 
         return tempStack;
-
     }
 
 
