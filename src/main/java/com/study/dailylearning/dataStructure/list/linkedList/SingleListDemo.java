@@ -6,7 +6,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 /**
- * @program: dailylearning
+ *
  * @description:
  * @create: 2020-01-27
  **/

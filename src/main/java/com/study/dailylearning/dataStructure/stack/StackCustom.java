@@ -1,7 +1,7 @@
 package com.study.dailylearning.dataStructure.stack;
 
 /**
- * @program: dailylearning
+
  * @description:
  * @create: 2020-04-25
  **/
@@ -54,7 +54,7 @@ public class StackCustom {
 
 
     //sort a stack by using another stack
-    public StackCustom createStack(StackCustom stack) {
+    public StackCustom sortStack(StackCustom stack) {
         StackCustom tempStack = new StackCustom(10);
         while (!stack.isEmpty()) {
             int currentData = stack.pop();
@@ -68,8 +68,34 @@ public class StackCustom {
     }
 
 
+    public  void printStack(StackCustom stack)
+    {
+        if(top>=0)
+        {
+            System.out.println("Elements of stacks are:");
+            for (int i = 0; i <= top; i++) {
+                System.out.println(array[i]);
+            }
+        }
+
+    }
 
 
+    public static void main(String[] args) {
+        StackCustom stackCustom = new StackCustom(10);
+        System.out.println("=================");
+        stackCustom.push(10);
+        stackCustom.push(30);
+        stackCustom.push(50);
+        stackCustom.push(40);
+        stackCustom.printStack(stackCustom);
+        StackCustom sortedStack=stackCustom.sortStack(stackCustom);
+        System.out.println("=================");
+        System.out.println("After Sorting :");
+        System.out.println("=================");
+        sortedStack.printStack(sortedStack);
+
+    }
 
 
 }

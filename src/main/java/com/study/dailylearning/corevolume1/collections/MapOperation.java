@@ -1,7 +1,7 @@
 package com.study.dailylearning.corevolume1.collections;
 
 /**
- * @program: dailylearning
+ *
  * @description: 集合操作学习
  * @create: 2019-12-14
  **/

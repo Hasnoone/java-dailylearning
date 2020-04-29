@@ -1,7 +1,7 @@
 package com.study.dailylearning.algorithm.sortalgorithm;
 
 /**
- * @program: dailylearning
+ *
  * @description: 基本思想：两个数比较大小，较大的数下沉，较小的数冒起来。
  * @create: 2019-12-18
  **/

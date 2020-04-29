@@ -3,7 +3,7 @@ package com.study.dailylearning.thread;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @program: dailylearning
+ *
  * @description:
  * @create: 2020-01-14
  **/

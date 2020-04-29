@@ -1,7 +1,7 @@
 package com.study.dailylearning.dataStructure.stack;
 
 /**
- * @program: dailylearning
+ *
  * @description:
  * @create: 2020-04-25
  **/

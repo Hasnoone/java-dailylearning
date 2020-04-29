@@ -1,7 +1,7 @@
 package com.study.dailylearning.algorithm.leetcode.longestPalindrome;
 
 /**
- * @program: dailylearning
+ *
  * @description:
  * @create: 2020-01-11
  **/

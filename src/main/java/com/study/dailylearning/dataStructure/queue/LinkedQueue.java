@@ -1,7 +1,7 @@
 package com.study.dailylearning.dataStructure.queue;
 
 /**
- * @program: dailylearning
+ *
  * @description:
  * @create: 2020-04-18
  **/

@@ -5,7 +5,7 @@ import java.util.Queue;
 import java.util.Random;
 
 /**
- * @program: dailylearning
+ *
  * @description: 优先级队列
  * @create: 2020-04-19
  **/

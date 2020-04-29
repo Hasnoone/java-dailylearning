@@ -3,7 +3,7 @@ package com.study.dailylearning.dataStructure.list.arrayList;
 import java.util.Iterator;
 
 /**
- * @program: dailylearning
+ *
  * @description:
  * @create: 2020-02-25
  **/
