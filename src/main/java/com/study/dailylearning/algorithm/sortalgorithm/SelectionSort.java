@@ -5,7 +5,6 @@ package com.study.dailylearning.algorithm.sortalgorithm;
  * @description:
  * 在长度为N的无序数组中，第一次遍历n-1个数，找到最小的数值与第一个元素交换；
  * 第二次遍历n-2个数，找到最小的数值与第二个元素交换；
- * @author: XuHang
  * @create: 2019-12-21
  **/
 public class SelectionSort {

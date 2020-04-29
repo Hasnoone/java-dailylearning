@@ -9,7 +9,6 @@ import java.util.Objects;
 /**
  * @program: dailylearning
  * @description:
- * @author: XuHang
  * @create: 2020-04-02
  **/
 public class MyArrayList<T> implements Iterable<T> {

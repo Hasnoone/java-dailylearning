@@ -3,7 +3,6 @@ package com.study.dailylearning.dataStructure.array;
 /**
  * @program: dailylearning
  * @description:
- * @author: XuHang
  * @create: 2020-04-20
  **/
 public class RotateArray {

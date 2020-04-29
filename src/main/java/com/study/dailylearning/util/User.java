@@ -2,7 +2,6 @@ package com.study.dailylearning.util;
 
 /**
  * @description
- * @outhor xuhang
  * @create 2020-03-26 11:22
  */
 public class User {

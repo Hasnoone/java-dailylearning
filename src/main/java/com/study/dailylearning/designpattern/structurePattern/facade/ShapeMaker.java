@@ -2,7 +2,6 @@ package com.study.dailylearning.designpattern.structurePattern.facade;
 
 /**
  * @description 外观类
- * @outhor xuhang
  * @create 2019-12-20 14:19
  */
 public class ShapeMaker {

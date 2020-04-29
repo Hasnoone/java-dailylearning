@@ -3,7 +3,6 @@ package com.study.dailylearning.algorithm.leetcode.isPalindrome;
 /**
  * @program: dailylearning
  * @description: Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
- * @author: XuHang
  * @create: 2020-01-11
  **/
 public class IsPalindrome {

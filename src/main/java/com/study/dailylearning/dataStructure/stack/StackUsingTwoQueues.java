@@ -15,8 +15,6 @@ public class StackUsingTwoQueues {
     }
 
 
-
-
     //remove value from the beginning of the list to demonstrating behaviour of stack
     //queue first in first out
     //stack last in first out
@@ -39,7 +37,6 @@ public class StackUsingTwoQueues {
     }
 
 
-
     public int pop() {
         if (queue1.size() == 0) {
             throw new QueueEmptyException("There is no elements in the stack,Underflow Exception");
@@ -57,18 +54,15 @@ public class StackUsingTwoQueues {
         return sb.toString();
     }
 
-
     public class QueueEmptyException extends RuntimeException {
         public QueueEmptyException(){
             super();
         }
-
         public QueueEmptyException(String message) {
             super(message);
         }
 
     }
-
 
     public static void main(String[] args) {
         StackUsingTwoQueues stack = new StackUsingTwoQueues();

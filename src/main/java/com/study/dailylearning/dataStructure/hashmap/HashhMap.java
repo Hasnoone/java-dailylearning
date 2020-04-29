@@ -3,7 +3,6 @@ package com.study.dailylearning.dataStructure.hashmap;
 /**
  * @program: dailylearning
  * @description:
- * @author: XuHang
  * @create: 2020-03-03
  **/
 public class HashhMap {

@@ -2,7 +2,6 @@ package com.study.dailylearning.designpattern.structurePattern.proxy.cglib;
 
 /**
  * @description
- * @outhor xuhang
  * @create 2019-12-20 16:47
  */
 public class Engineer {

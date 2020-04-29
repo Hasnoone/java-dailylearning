@@ -5,7 +5,6 @@ import java.nio.BufferUnderflowException;
 /**
  * @program: dailylearning
  * @description:
- * @author: XuHang
  * @create: 2020-04-11
  **/
 public class BinaryResearch<T extends Comparable<? super T>> {

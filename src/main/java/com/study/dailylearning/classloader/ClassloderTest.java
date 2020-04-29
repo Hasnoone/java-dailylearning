@@ -3,7 +3,6 @@ package com.study.dailylearning.classloader;
 /**
  * @program: dailylearning
  * @description:
- * @author: XuHang
  * @create: 2020-03-26
  **/
 public class ClassloderTest {

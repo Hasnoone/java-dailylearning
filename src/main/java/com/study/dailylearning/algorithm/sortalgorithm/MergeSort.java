@@ -3,7 +3,6 @@ package com.study.dailylearning.algorithm.sortalgorithm;
 /**
  * @program: dailylearning
  * @description: 归并排序
- * @author: XuHang
  * @create: 2019-12-25
  **/
 public class MergeSort {

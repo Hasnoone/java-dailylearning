@@ -1,11 +1,6 @@
 package com.study.dailylearning.algorithm.leetcode.addTwoNumbers;
 
-/**
- * @program: dailylearning
- * @description:
- * @author: XuHang
- * @create: 2020-01-11
- **/
+
 public class Solution {
 
 

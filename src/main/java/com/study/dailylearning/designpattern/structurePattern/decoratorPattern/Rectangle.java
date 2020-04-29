@@ -4,7 +4,6 @@ import com.study.dailylearning.designpattern.structurePattern.facade.Shape;
 
 /**
  * @description
- * @outhor xuhang
  * @create 2019-12-20 14:17
  */
 public class Rectangle implements Shape {

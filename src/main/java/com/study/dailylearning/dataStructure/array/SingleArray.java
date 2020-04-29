@@ -6,8 +6,7 @@ import lombok.ToString;
 
 /**
  * @program: dailylearning
- * @description: 单项队列
- * @author: XuHang
+ * @description: 单向队列
  * @create: 2020-01-27
  **/
 public class SingleArray {

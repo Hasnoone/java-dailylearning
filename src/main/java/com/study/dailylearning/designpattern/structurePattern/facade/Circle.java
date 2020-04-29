@@ -2,7 +2,6 @@ package com.study.dailylearning.designpattern.structurePattern.facade;
 
 /**
  * @description
- * @outhor xuhang
  * @create 2019-12-20 14:17
  */
 public class Circle implements Shape {

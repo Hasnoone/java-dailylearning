@@ -5,7 +5,6 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * @program: dailylearning
  * @description:
- * @author: XuHang
  * @create: 2020-01-14
  **/
 public class ReentLockThread {

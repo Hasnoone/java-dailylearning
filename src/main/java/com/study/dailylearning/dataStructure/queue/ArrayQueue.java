@@ -3,9 +3,6 @@ package com.study.dailylearning.dataStructure.queue;
 /**
  * @program: dailylearning
  * @description: 用数组实现一个队列
- * <p>
- * 队列
- * @author: XuHang
  * @create: 2020-04-16
  **/
 public class ArrayQueue<T> {

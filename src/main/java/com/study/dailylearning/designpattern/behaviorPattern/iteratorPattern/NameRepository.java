@@ -3,12 +3,11 @@ package com.study.dailylearning.designpattern.behaviorPattern.iteratorPattern;
 /**
  * @program: dailylearning
  * @description:
- * @author: XuHang
  * @create: 2019-12-28
  **/
 public class NameRepository implements Container {
 
-    public String[] naems = {"xuhang","zhanglu"};
+    public String[] names = {"",""};
 
 
     @Override
@@ -22,7 +21,7 @@ public class NameRepository implements Container {
 
         @Override
         public boolean hasNext() {
-            if (index < naems.length) {
+            if (index < names.length) {
                 return true;
             }
             return false;
@@ -31,7 +30,7 @@ public class NameRepository implements Container {
         @Override
         public Object next() {
             if (this.hasNext()) {
-                return naems[index++];
+                return names[index++];
             }
             return null;
         }

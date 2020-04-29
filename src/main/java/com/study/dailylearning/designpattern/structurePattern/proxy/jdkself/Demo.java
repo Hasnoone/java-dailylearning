@@ -9,7 +9,6 @@ import java.lang.reflect.Proxy;
  *  java.lang.reflect.InvocationHandler（处理器接口）：可以通过invoke方法实现
  * 对真实角色的代理访问。
  * 每次通过 Proxy 生成的代理类对象都要指定对应的处理器对象。
- * @outhor xuhang
  * @create 2019-12-20 16:42
  */
 public class Demo {

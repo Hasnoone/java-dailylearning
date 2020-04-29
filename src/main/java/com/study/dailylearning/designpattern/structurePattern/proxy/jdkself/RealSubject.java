@@ -2,7 +2,6 @@ package com.study.dailylearning.designpattern.structurePattern.proxy.jdkself;
 
 /**
  * @description
- * @outhor xuhang
  * @create 2019-12-20 16:32
  */
 public class RealSubject implements Subject {

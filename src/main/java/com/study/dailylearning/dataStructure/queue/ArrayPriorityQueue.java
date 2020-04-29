@@ -7,7 +7,6 @@ import java.util.Random;
 /**
  * @program: dailylearning
  * @description: 优先级队列
- * @author: XuHang
  * @create: 2020-04-19
  **/
 public class ArrayPriorityQueue<T extends Comparable> {

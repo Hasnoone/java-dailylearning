@@ -3,7 +3,6 @@ package com.study.dailylearning.dataStructure.queue;
 /**
  * @program: dailylearning
  * @description:
- * @author: XuHang
  * @create: 2020-04-18
  **/
 public class LinkedQueue<T> {

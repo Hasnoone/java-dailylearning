@@ -7,7 +7,6 @@ import java.lang.reflect.Method;
 
 /**
  * @description
- * @outhor xuhang
  * @create 2019-12-20 16:58
  */
 public class CligbProxy implements MethodInterceptor {

@@ -3,7 +3,6 @@ package com.study.dailylearning.dataStructure.stack;
 /**
  * @program: dailylearning
  * @description:
- * @author: XuHang
  * @create: 2020-04-25
  **/
 

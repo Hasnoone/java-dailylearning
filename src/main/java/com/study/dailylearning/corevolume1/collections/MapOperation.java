@@ -3,7 +3,6 @@ package com.study.dailylearning.corevolume1.collections;
 /**
  * @program: dailylearning
  * @description: 集合操作学习
- * @author: XuHang
  * @create: 2019-12-14
  **/
 public class MapOperation {

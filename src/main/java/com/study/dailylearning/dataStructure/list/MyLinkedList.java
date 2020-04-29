@@ -5,7 +5,6 @@ import java.util.Iterator;
 /**
  * @program: dailylearning
  * @description:
- * @author: XuHang
  * @create: 2020-04-03
  **/
 public class MyLinkedList<T> implements Iterable {

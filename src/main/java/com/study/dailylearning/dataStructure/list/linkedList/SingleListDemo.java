@@ -8,7 +8,6 @@ import lombok.ToString;
 /**
  * @program: dailylearning
  * @description:
- * @author: XuHang
  * @create: 2020-01-27
  **/
 public class SingleListDemo {
