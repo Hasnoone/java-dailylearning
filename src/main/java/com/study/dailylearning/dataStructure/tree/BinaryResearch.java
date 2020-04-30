@@ -8,7 +8,6 @@ import java.nio.BufferUnderflowException;
  * @create: 2020-04-11
  **/
 public class BinaryResearch<T extends Comparable<? super T>> {
-
     public static void main(String[] args) {
         BinaryResearch binaryResearch = new BinaryResearch();
         binaryResearch.rootNode = binaryResearch.init();
@@ -166,7 +165,6 @@ public class BinaryResearch<T extends Comparable<? super T>> {
         } else if (compare > 0) {
             rootNode.rightNode = insert(data,rootNode.rightNode);
         } else {
-            //do nothing
 
         }
         return null;

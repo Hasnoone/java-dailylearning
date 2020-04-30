@@ -30,16 +30,16 @@ public class HashMapAnalysis {
         countryCapitalMap.put(france,"Paris");
         countryCapitalMap.put(russia,"Moscow");
 
-//        countryCapitalMap.put(sichuan0,"sichuan0");
-//        countryCapitalMap.put(sichuan1,"sichuan1");
-//        countryCapitalMap.put(sichuan2,"sichuan2");
-//        countryCapitalMap.put(sichuan3,"sichuan3");
-//        countryCapitalMap.put(sichuan4,"sichuan4");
-//        countryCapitalMap.put(sichuan5,"sichuan5");
-//        countryCapitalMap.put(sichuan6,"sichuan6");
-//        countryCapitalMap.put(sichuan7,"sichuan7");
-//        countryCapitalMap.put(sichuan8,"sichuan8");
-//        countryCapitalMap.put(sichuan9,"sichuan9");
+        countryCapitalMap.put(sichuan0,"sichuan0");
+        countryCapitalMap.put(sichuan1,"sichuan1");
+        countryCapitalMap.put(sichuan2,"sichuan2");
+        countryCapitalMap.put(sichuan3,"sichuan3");
+        countryCapitalMap.put(sichuan4,"sichuan4");
+        countryCapitalMap.put(sichuan5,"sichuan5");
+        countryCapitalMap.put(sichuan6,"sichuan6");
+        countryCapitalMap.put(sichuan7,"sichuan7");
+        countryCapitalMap.put(sichuan8,"sichuan8");
+        countryCapitalMap.put(sichuan9,"sichuan9");
 
 
 
