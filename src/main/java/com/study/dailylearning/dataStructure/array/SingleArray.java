@@ -5,7 +5,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 /**
- * @program: dailylearning
+ *
  * @description: 单向队列
  * @create: 2020-01-27
  **/

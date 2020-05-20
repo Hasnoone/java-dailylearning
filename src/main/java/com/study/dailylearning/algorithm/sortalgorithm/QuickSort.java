@@ -1,7 +1,7 @@
 package com.study.dailylearning.algorithm.sortalgorithm;
 
 /**
- * @program: dailylearning
+ *
  * @description:
  * @create: 2019-12-25
  **/

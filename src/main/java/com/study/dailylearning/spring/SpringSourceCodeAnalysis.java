@@ -11,8 +11,8 @@ public class SpringSourceCodeAnalysis {
 
 
     public static void main(String[] args) {
-//        ApplicationContext context = new ClassPathXmlApplicationContext("classpath:ApplicationContext.xml");
-        ApplicationContext context = new AnnotationConfigApplicationContext(TestServiceImpl.class);
+        ApplicationContext context = new ClassPathXmlApplicationContext("classpath:ApplicationContext.xml");
+//        ApplicationContext context = new AnnotationConfigApplicationContext(TestServiceImpl.class);
         TestService service = context.getBean("testServiceImpl", TestServiceImpl.class);
         service.test();
 

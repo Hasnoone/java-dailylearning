@@ -1,7 +1,7 @@
 package com.study.dailylearning.classloader;
 
 /**
- * @program: dailylearning
+ *
  * @description:
  * @create: 2020-03-26
  **/

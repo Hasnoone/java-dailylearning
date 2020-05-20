@@ -1,7 +1,7 @@
 package com.study.dailylearning.designpattern.behaviorPattern.observerPattern;
 
 /**
- * @program: dailylearning
+ *
  * @description:
  * @create: 2019-12-28
  **/
