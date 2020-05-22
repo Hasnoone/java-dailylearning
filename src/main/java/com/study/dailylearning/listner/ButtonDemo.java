@@ -40,6 +40,7 @@ public class ButtonDemo {
         // 添加到监听器列表
         this.listeners.add(listener) ;
     }
+    
 
 
     public void ButtonClick() {
