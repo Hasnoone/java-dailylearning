@@ -1,69 +1,43 @@
 package com.study.dailylearning.algorithm.sortalgorithm;
 
 /**
- *
- * @description: 基本思想：两个数比较大小，较大的数下沉，较小的数冒起来。
+ * @description: 基本思想：相邻两个数比较大小
  * @create: 2019-12-18
  **/
 public class BubbleSort {
 
     public static void main(String[] args) {
-        int[] intArr = {15,24,78,95,13,17,33,22,45};
-        bubbleSort3(intArr);
-
-        for (int i = 0; i < intArr.length; i++) {
-            System.out.println(intArr[i]);
-        }
+        int[] intArr = {8,9,1,7,2,5,4,6,0};
+        bubbleSortMyself(intArr);
     }
 
 
-    public static void bubbleSort(int[] intArr) {
-        //表示趟数，一共arr.length-1次。
-        for (int i = 0; i < intArr.length-1; i++) {
-            for (int j = intArr.length-1; j > i; j--) {
-                if (intArr[j] < intArr[j-1]) {
-                    int temp = intArr[j];
-                    intArr[j] = intArr[j-1];
-                    intArr[j-1] = temp;
+    //自己写的
+    public static void bubbleSortMyself(int[] array) {
+        for (int i = 0; i < array.length - 1; i++) {
+            for (int j = 0; j < array.length - 1 - i; j++) {
+                if (array[j] > array[j + 1]) {
+                    int tmp = array[j + 1];
+                    array[j + 1] = array[j];
+                    array[j] = tmp;
                 }
+                ArrPrintUtil.print(array);
             }
         }
     }
 
-
-    public static void bubbleSort3(int[] intArr) {
-        //the times of loop
-        for (int i = 0; i < intArr.length-1; i++) {
-            for (int j = 0; j < intArr.length - 1; j++) {
-                if (intArr[j] > intArr[j+1]) {
-                    int temp = intArr[j];
-                    intArr[j] = intArr[j+1];
-                    intArr[j+1] = temp;
+    //标准答案
+    public static int[] bubbleSort(int[] array) {
+        if (array.length == 0) return array;
+        for (int i = 0; i < array.length; i++)
+            for (int j = 0; j < array.length - 1 - i; j++)
+                if (array[j + 1] < array[j]) {
+                    int temp = array[j + 1];
+                    array[j + 1] = array[j];
+                    array[j] = temp;
                 }
-            }
-        }
+        return array;
     }
-
-
-
-    public static void bubbleSort2(int[] intArr) {
-        boolean flag;
-        for (int i = 0; i < intArr.length - 1; i++) {
-            flag = false;
-            for (int j = intArr.length - 1; j > i; j--) {
-                if (intArr[j] < intArr[j-1]) {
-                    int temp = intArr[j];
-                    intArr[j] = intArr[j-1];
-                    intArr[j-1] = temp;
-                    flag = true;
-                }
-            }
-            if(!flag) break;
-        }
-    }
-
-
-
 
 }
 

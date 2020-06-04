@@ -11,38 +11,46 @@ package com.study.dailylearning.algorithm.sortalgorithm;
 public class InsertionSort {
 
     public static void main(String[] args) {
-        int[] intArr = {15,24,78,95,13,17,33,22,45};
-        insertionSort2(intArr);
-        //print the  int type of array
-        for (int i = 0; i < intArr.length; i++) {
-            System.out.println(intArr[i]);
-        }
+//        Integer a = new Integer(100);
+//        Integer b = new Integer(100);
+//        System.out.println(b==a);
+//        System.out.println(b.equals(a));
+//        a = 100;
+//        System.out.println(a);
+//        b = a;
+//        System.out.println(a);
+//        System.out.println(b);
+//        System.out.println(b==a);
+//        System.out.println(b.equals(a));
+        int[] intArr = {8,9,1,7,2,5,4,6,0};
+        insertionSortAnswer(intArr);
     }
 
 
-    public static void insertionSort(int[] intArray) {
-        for (int i = 0; i < intArray.length-1; i++) {
-            int prefixIndex = i;
-            int currentValue = intArray[i+1];
-            while (prefixIndex >= 0 && intArray[prefixIndex] > currentValue) {
-                intArray[prefixIndex+1] = intArray[prefixIndex];
-                prefixIndex--;
+    public static void insertionSortMyself(int[] arrData) {
+        for (int i = 0; i < arrData.length; i++) {
+            int curIndex = i;
+            int nextIndexVal = arrData[curIndex + 1];
+            while (curIndex>=0 && arrData[curIndex] > nextIndexVal) {
+                arrData[curIndex] = nextIndexVal;
+                curIndex--;
             }
-            intArray[prefixIndex + 1] = currentValue;
         }
-
     }
 
-    // 15,24,78,95,13,17,33,22,45
-    public static void insertionSort2(int[] intArray) {
+    //标准答案
+    // 8,9,1,7,2,5,4,6,0
+    public static void insertionSortAnswer(int[] intArray) {
         for (int i = 0; i < intArray.length-1; i++) {
             int currentIndex = i;
             int nextIndexValue = intArray[currentIndex+1];
             while (currentIndex >= 0 && intArray[currentIndex] > nextIndexValue) {
                 intArray[currentIndex+1] = intArray[currentIndex];
                 currentIndex--;
+                ArrPrintUtil.print(intArray);
             }
             intArray[currentIndex+1]=nextIndexValue;
+            ArrPrintUtil.print(intArray);
         }
     }
 }
