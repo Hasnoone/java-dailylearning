@@ -11,17 +11,6 @@ package com.study.dailylearning.algorithm.sortalgorithm;
 public class InsertionSort {
 
     public static void main(String[] args) {
-//        Integer a = new Integer(100);
-//        Integer b = new Integer(100);
-//        System.out.println(b==a);
-//        System.out.println(b.equals(a));
-//        a = 100;
-//        System.out.println(a);
-//        b = a;
-//        System.out.println(a);
-//        System.out.println(b);
-//        System.out.println(b==a);
-//        System.out.println(b.equals(a));
         int[] intArr = {8,9,1,7,2,5,4,6,0};
         insertionSortAnswer(intArr);
     }
