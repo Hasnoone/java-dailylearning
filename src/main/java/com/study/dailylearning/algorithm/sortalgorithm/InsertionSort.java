@@ -11,36 +11,43 @@ package com.study.dailylearning.algorithm.sortalgorithm;
 public class InsertionSort {
 
     public static void main(String[] args) {
-        int[] intArr = {8,9,1,7,2,5,4,6,0};
-        insertionSortAnswer(intArr);
+        int[] array = {8,9,1,7,2,5,4,6,0,3};
+        insertionSortMyself(array);
+        ArrPrintUtil.print(array);
     }
 
 
     public static void insertionSortMyself(int[] arrData) {
         for (int i = 0; i < arrData.length; i++) {
             int curIndex = i;
-            int nextIndexVal = arrData[curIndex + 1];
-            while (curIndex>=0 && arrData[curIndex] > nextIndexVal) {
-                arrData[curIndex] = nextIndexVal;
+            int currentVal = arrData[curIndex];
+            while (curIndex > 0 && currentVal < arrData[curIndex - 1]) {
+                int tmp = arrData[curIndex - 1];
+                arrData[curIndex - 1] = currentVal;
+                arrData[curIndex ] = tmp;
                 curIndex--;
             }
+            ArrPrintUtil.print(arrData);
         }
     }
 
     //标准答案
     // 8,9,1,7,2,5,4,6,0
-    public static void insertionSortAnswer(int[] intArray) {
-        for (int i = 0; i < intArray.length-1; i++) {
-            int currentIndex = i;
-            int nextIndexValue = intArray[currentIndex+1];
-            while (currentIndex >= 0 && intArray[currentIndex] > nextIndexValue) {
-                intArray[currentIndex+1] = intArray[currentIndex];
-                currentIndex--;
-                ArrPrintUtil.print(intArray);
+    public static int[] insertionSortAnswer(int[] array) {
+        if (array.length == 0)
+            return array;
+        int current;
+        for (int i = 0; i < array.length - 1; i++) {
+            current = array[i + 1];
+            int preIndex = i;
+            while (preIndex >= 0 && current < array[preIndex]) {
+                array[preIndex + 1] = array[preIndex];
+                preIndex--;
             }
-            intArray[currentIndex+1]=nextIndexValue;
-            ArrPrintUtil.print(intArray);
+            array[preIndex + 1] = current;
+            ArrPrintUtil.print(array);
         }
+        return array;
     }
 }
 

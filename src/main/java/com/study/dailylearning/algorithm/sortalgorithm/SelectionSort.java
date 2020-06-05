@@ -11,7 +11,7 @@ package com.study.dailylearning.algorithm.sortalgorithm;
 public class SelectionSort {
 
     public static void main(String[] args) {
-        int[] array = {8,9,1,7,2,5,4,6,0};
+        int[] array = {8,9,1,7,2,5,4,6,0,3};
         selectionSort(array);
     }
 

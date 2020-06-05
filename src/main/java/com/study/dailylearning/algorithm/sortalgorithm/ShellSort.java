@@ -9,15 +9,32 @@ public class ShellSort {
 
 
     public static void main(String[] args) {
-        int[] numArr = {8,9,1,7,2,5,4,6,0};
-        ArrPrintUtil.print(numArr);
-        System.out.println("原始数组");
-        ShellSort(numArr);
+        int[] array = {8,9,1,7,2,5,4,6,0,3};
+        shellSortMyself(array);
+    }
+
+
+    public static void shellSortMyself(int[] array) {
+        int length = array.length;
+        int gap = length / 2;
+        while (gap > 0) {
+            for (int i = gap; i < array.length; i++) {
+                int preIndex = i - gap;
+                while (preIndex >= 0 && array[gap] < array[preIndex]) {
+                    int tmp = array[gap];
+                    array[gap] = array[preIndex];
+                    array[preIndex] = tmp;
+                    preIndex -= gap;
+                }
+            }
+            ArrPrintUtil.print(array);
+        }
+
     }
 
 
 
-    public static int[] ShellSort(int[] array) {
+        public static int[] shellSortAnswer(int[] array) {
         int len = array.length;
         int temp, gap = len / 2;
         while (gap > 0) {
@@ -29,10 +46,9 @@ public class ShellSort {
                     preIndex -= gap;
                 }
                 array[preIndex + gap] = temp;
-                ArrPrintUtil.print(array);
-
             }
             gap /= 2;
+            ArrPrintUtil.print(array);
         }
         return array;
     }

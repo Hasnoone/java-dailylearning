@@ -7,7 +7,7 @@ package com.study.dailylearning.algorithm.sortalgorithm;
 public class BubbleSort {
 
     public static void main(String[] args) {
-        int[] intArr = {8,9,1,7,2,5,4,6,0};
+        int[] intArr = {8,9,1,7,2,5,4,6,0,3};
         bubbleSortMyself(intArr);
     }
 
