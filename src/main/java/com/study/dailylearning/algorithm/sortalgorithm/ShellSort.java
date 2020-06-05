@@ -27,6 +27,7 @@ public class ShellSort {
                     preIndex -= gap;
                 }
             }
+            gap = gap / 2;
             ArrPrintUtil.print(array);
         }
 
