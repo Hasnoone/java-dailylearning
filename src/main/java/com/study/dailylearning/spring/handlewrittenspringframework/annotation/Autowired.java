@@ -1,0 +1,19 @@
+package com.study.dailylearning.spring.handlewrittenspringframework.annotation;
+
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+/**
+ * @description
+ * @date 09:24 2020/6/12
+ */
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target({ElementType.FIELD})
+public @interface Autowired {
+
+}
