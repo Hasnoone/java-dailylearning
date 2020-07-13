@@ -9,13 +9,17 @@ import java.util.List;
  */
 public class ArrayListCodeAnalysis {
     public static void main(String[] args) {
-        List<String> strList = new ArrayList<>();
+        List<Integer> strList = new ArrayList<>();
 
-        strList.add("1");
-        strList.add("2");
-        strList.add("3");
+        Object[] objs = {};
+        int length = objs.length;
+        System.out.println(length);
 
 
+//        for (int i = 0; i < 13; i++) {
+//
+//            strList.add(i);
+//        }
 
     }
 }
